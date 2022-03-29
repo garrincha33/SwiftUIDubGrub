@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
-//step 2 create dummy profile screens
+import MapKit
+
 struct LocationMapView: View {
+    //step 1 create a state property which is for local state
+    //to create your map region
+    @State private var region  = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.53683, longitude: -3.14053), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+  
     var body: some View {
-        Text("map view")
+        //step 2 inside a z stack add image over the map region
+        //span is for how far you want to zoom in or out
+        ZStack {
+            Map(coordinateRegion: $region).ignoresSafeArea()
+            VStack {
+                Image("ddg-map-logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 70)
+                Spacer()
+            }
+        }
     }
 }
 

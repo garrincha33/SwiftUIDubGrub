@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-//step 3 create a tabview with sf symbols and point at
-//dummy views
+
 struct AppTabView: View {
     var body: some View {
         TabView {

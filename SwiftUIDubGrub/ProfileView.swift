@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//step 2 create dummy profile screens
+
 struct ProfileView: View {
     var body: some View {
         Text("Profile View")
