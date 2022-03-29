@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//step 2 create dummy profile screens
+
 
 struct LocationListView: View {
     var body: some View {
