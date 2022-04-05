@@ -10,12 +10,9 @@ import SwiftUI
 
 struct LocationListView: View {
     var body: some View {
-        //step 1 create a navigation view
         NavigationView {
-            //step 2 add a list with a for loop
             List {
                 ForEach(0..<10) { item in
-                    //step 3 inside a hstack put your main image
                     HStack {
                         Image("default-square-asset")
                             .resizable()
@@ -30,11 +27,10 @@ struct LocationListView: View {
                                 .fontWeight(.semibold)
                                 .lineLimit(1)
                                 .minimumScaleFactor(0.75)
-                            //step 4 create a view which will
-                            //be reused later for the avatar
+                           
                             HStack {
-                                AvatarImage()
-                                AvatarImage()
+                                AvatarImage(size: 35)
+                                AvatarImage(size: 35)
                                
                             }
                         }.padding(.leading)
@@ -44,13 +40,14 @@ struct LocationListView: View {
         }
     }
 }
-//step 5 avatar implementation
+//step 9 add a size for the avatar making it flexible
 struct AvatarImage: View {
+    var size: CGFloat
     var body: some View {
             Image("default-avatar")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 35, height: 35)
+                .frame(width: size, height: size)
                 .clipShape(Circle())
     }
 }
