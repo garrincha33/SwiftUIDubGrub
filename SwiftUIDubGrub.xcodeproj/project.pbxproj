@@ -16,6 +16,7 @@
 		8248E1C527F2F97F00DD3E3D /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248E1C427F2F97F00DD3E3D /* LocationMapView.swift */; };
 		8248E1C727F2F99E00DD3E3D /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248E1C627F2F99E00DD3E3D /* LocationListView.swift */; };
 		8248E1C927F2FAB000DD3E3D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248E1C827F2FAB000DD3E3D /* ProfileView.swift */; };
+		8248E1CC27FC27A400DD3E3D /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8248E1CB27FC27A400DD3E3D /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8248E1C427F2F97F00DD3E3D /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		8248E1C627F2F99E00DD3E3D /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		8248E1C827F2FAB000DD3E3D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8248E1CB27FC27A400DD3E3D /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				8248E1C227F2F93200DD3E3D /* AppTabView.swift */,
 				8248E1C427F2F97F00DD3E3D /* LocationMapView.swift */,
 				8248E1C627F2F99E00DD3E3D /* LocationListView.swift */,
+				8248E1CB27FC27A400DD3E3D /* LocationDetailsView.swift */,
 				8248E1C827F2FAB000DD3E3D /* ProfileView.swift */,
 				8248E1C027F2F8C400DD3E3D /* Color+Ext.swift */,
 				8248E1BC27F2F57300DD3E3D /* SwiftUIDubGrub.entitlements */,
@@ -167,6 +170,7 @@
 				8248E1C527F2F97F00DD3E3D /* LocationMapView.swift in Sources */,
 				8248E1C727F2F99E00DD3E3D /* LocationListView.swift in Sources */,
 				8248E1C327F2F93200DD3E3D /* AppTabView.swift in Sources */,
+				8248E1CC27FC27A400DD3E3D /* LocationDetailsView.swift in Sources */,
 				8248E1C927F2FAB000DD3E3D /* ProfileView.swift in Sources */,
 				8248E1C127F2F8C400DD3E3D /* Color+Ext.swift in Sources */,
 			);
