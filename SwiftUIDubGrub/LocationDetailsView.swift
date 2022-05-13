@@ -9,29 +9,28 @@ import SwiftUI
 
 struct LocationDetailsView: View {
     var body: some View {
-        //step 1 create vGrid ready
+        
         let vGrid3ColumnLayout = [ GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-        //step 2 create a navigation view with vstack
-        NavigationView {
+
             VStack(spacing: 16) {
-                //step 3 default banner at top
+                
                 Image("default-banner-asset")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 120)
-                //step 4 create location icon
+                
                 HStack {
                     Label("test", systemImage: "mappin.and.ellipse")
                         .font(.caption)
                         .foregroundColor(.secondary)
                     Spacer()
                 }.padding(.horizontal)
-                //step 5 create a some description text
+                
                 Text("this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test this is a test")
                     .lineLimit(3)
                     .minimumScaleFactor(0.75)
                     .padding(.horizontal)
-                //step 6 create capsual for contact
+                
                 ZStack {
                     Capsule()
                         .frame(height: 80)
@@ -60,35 +59,36 @@ struct LocationDetailsView: View {
                     }
                 }
                 .padding(.horizontal)
-                //step 7 create whos here section
+                
                 Text("Whos Here?")
                     .bold()
                     .font(.title)
-                //step 10 create a lazy vgrid of avatars
-                LazyVGrid(columns: vGrid3ColumnLayout) {
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
-                    FirstNameAvatarView(firstName: "Richy")
+                ScrollView {
+                    LazyVGrid(columns: vGrid3ColumnLayout) {
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                        FirstNameAvatarView(firstName: "Richy")
+                    }
                 }
-                
-                
                 Spacer()
             }
             .navigationTitle("Location Name")
             .navigationBarTitleDisplayMode(.inline)
-        }
+        
     }
 }
 
 struct LocationDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationDetailsView()
+        NavigationView {
+            LocationDetailsView()
+        }
     }
 }
 
@@ -112,7 +112,6 @@ struct LocationActionButton: View {
     }
 }
 
-//step 8 create avatar image with a name string
 struct FirstNameAvatarView: View {
     var firstName: String
     var body: some View {
